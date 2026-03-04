@@ -11,3 +11,7 @@ Lebih detailnya begini:
 Mahasiswa02[] → artinya kita membuat array yang isinya nanti berupa object Mahasiswa02.
 arrayOfMahasiswa → nama array-nya.
 new Mahasiswa02[3] → membuat array dengan ukuran 3 (index 0, 1, dan 2).
+3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan 
+konstruktur pada baris program berikut?
+    arrayOfMahasiswa[0] = new Mahasiswa();
+Jawaban:Class Mahasiswa02 memang tidak memiliki konstruktor yang dibuat secara eksplisit oleh programmer. Akan tetapi, Java secara otomatis menyediakan konstruktor default tanpa parameter. Oleh karena itu, pemanggilan new Mahasiswa02() tetap dapat dilakukan tanpa error karena konstruktor default tersebut yang sebenarnya dijalankan.
