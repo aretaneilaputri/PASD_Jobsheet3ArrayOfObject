@@ -15,3 +15,13 @@ new Mahasiswa02[3] → membuat array dengan ukuran 3 (index 0, 1, dan 2).
 konstruktur pada baris program berikut?
     arrayOfMahasiswa[0] = new Mahasiswa();
 Jawaban:Class Mahasiswa02 memang tidak memiliki konstruktor yang dibuat secara eksplisit oleh programmer. Akan tetapi, Java secara otomatis menyediakan konstruktor default tanpa parameter. Oleh karena itu, pemanggilan new Mahasiswa02() tetap dapat dilakukan tanpa error karena konstruktor default tersebut yang sebenarnya dijalankan.
+4. Apa yang dilakukan oleh kode program berikut? 
+    arrayOfMahasiswa[0] = new Mahasiswa02();
+    arrayOfMahasiswa[0].nim = "244107060033";
+    arrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+    arrayOfMahasiswa[0].kelas = "SIB-1E";
+    arrayOfMahasiswa[0].ipk = (float) 3.75;
+Jawaban: Kode tersebut berfungsi untuk:
+a. Membuat objek Mahasiswa02 pada indeks pertama array.
+b. Mengisi semua atribut mahasiswa tersebut (nim, nama, kelas, ipk).
+Secara sederhana, kode ini sedang membuat satu data mahasiswa lengkap lalu menyimpannya di dalam array of object pada posisi pertama.
