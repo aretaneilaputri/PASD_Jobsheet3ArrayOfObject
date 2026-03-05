@@ -31,3 +31,11 @@ Jawaban:Class Mahasiswa02 dan MahasiswaDemo02 dipisahkan karena memiliki tugas y
 3.3 Pertanyaan & Jawaban 
 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program 
 pada langkah no 3.
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama 
+myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+        Mahasiswa[] myArrayOfMahasiswa = new Mahasiswa[3];
+        myArrayOfMahasiswa[0].nim = "244107060033";
+        myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+        myArrayOfMahasiswa[0].kelas = "SIB-1E";
+        myArrayOfMahasiswa[0].ipk = (float) 3.75;
+Jawaban: Kode tersebut menyebabkan error karena objek Mahasiswa di dalam array belum dibuat (belum diinstansiasi).yang dibuat hanya array atau tempat penyimpanan untuk 3 objek Mahasiswa, tetapi setiap elemen array masih bernilai null.Ketika program langsung mengakses atribut seperti nim, nama, kelas, dan ipk, program mencoba menggunakan objek yang belum ada, sehingga terjadi NullPointerException.Agar tidak error, setiap elemen array harus dibuat objeknya terlebih dahulu menggunakan new Mahasiswa() sebelum mengisi atributnya.
