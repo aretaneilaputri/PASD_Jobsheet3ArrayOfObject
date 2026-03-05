@@ -63,3 +63,4 @@ public class Matakuliah02 {
         this.jam = jam;
     }
 }
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
