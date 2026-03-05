@@ -27,3 +27,7 @@ b. Mengisi semua atribut mahasiswa tersebut (nim, nama, kelas, ipk).
 Secara sederhana, kode ini sedang membuat satu data mahasiswa lengkap lalu menyimpannya di dalam array of object pada posisi pertama.
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
 Jawaban:Class Mahasiswa02 dan MahasiswaDemo02 dipisahkan karena memiliki tugas yang berbeda. Mahasiswa02 berfungsi sebagai representasi data mahasiswa, sedangkan MahasiswaDemo02 berfungsi untuk menjalankan program. Pemisahan ini membuat kode lebih rapi, terstruktur, sesuai prinsip OOP, dan lebih mudah dikembangkan.
+
+3.3 Pertanyaan & Jawaban 
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program 
+pada langkah no 3.
