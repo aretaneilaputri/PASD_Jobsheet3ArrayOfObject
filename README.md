@@ -39,3 +39,27 @@ myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
         myArrayOfMahasiswa[0].kelas = "SIB-1E";
         myArrayOfMahasiswa[0].ipk = (float) 3.75;
 Jawaban: Kode tersebut menyebabkan error karena objek Mahasiswa di dalam array belum dibuat (belum diinstansiasi).yang dibuat hanya array atau tempat penyimpanan untuk 3 objek Mahasiswa, tetapi setiap elemen array masih bernilai null.Ketika program langsung mengakses atribut seperti nim, nama, kelas, dan ipk, program mencoba menggunakan objek yang belum ada, sehingga terjadi NullPointerException.Agar tidak error, setiap elemen array harus dibuat objeknya terlebih dahulu menggunakan new Mahasiswa() sebelum mengisi atributnya.
+
+
+3.4 Pertanyaan & Jawaban 
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+Jawaban: Iya, suatu class dapat memiliki lebih dari satu constructor. Hal ini disebut constructor overloading. Constructor overloading terjadi ketika dalam satu class terdapat beberapa constructor yang memiliki nama sama tetapi parameter yang berbeda, baik dari jumlah maupun tipe datanya.Dengan adanya beberapa constructor, objek dapat dibuat dengan cara yang berbeda sesuai kebutuhan.contohnya:
+
+public class Matakuliah02 {
+    String kode;
+    String nama;
+    int sks;
+    int jam;
+
+    // constructor tanpa parameter
+    public Matakuliah02() {
+    }
+
+    // constructor dengan parameter
+    public Matakuliah02(String kode, String nama, int sks, int jam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jam = jam;
+    }
+}
