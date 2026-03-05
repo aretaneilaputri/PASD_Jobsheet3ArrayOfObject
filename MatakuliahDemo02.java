@@ -25,6 +25,8 @@ public class MatakuliahDemo02 {
             arrayOfMatakuliah[i].tambahData(kode, nama, sks, jumlahJam);
         }
 
+
+    
         System.out.println("\n======= DAFTAR MATAKULIAH =======");
         for(int i = 0; i < 3; i++) {
         System.out.println("Data Matakuliah ke-" + (i + 1));
